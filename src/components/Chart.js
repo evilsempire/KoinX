@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import TradingViewWidget from "./TradingViewWidget";
 import CoinDetails from "./CoinDetails";
+import TabGroup from "./tabs/TabGroup";
 
 const Chart = () => {
   const [coinPrice, setCoinPrice] = useState(null);
@@ -32,6 +33,8 @@ const Chart = () => {
     <div>
       <CoinDetails />
       <TradingViewWidget />
+
+      <TabGroup />
     </div>
   );
 };
