@@ -3,7 +3,7 @@ import Starter from "./Starter";
 import TrendingCoins from "./TrendingCoins";
 
 const Promotion = () => {
-    return <div className="promotion basis-1/4">
+    return <div className="promotion basis-2/7">
         <Starter />
         <TrendingCoins />
     </div>
