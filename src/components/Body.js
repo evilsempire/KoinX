@@ -4,15 +4,15 @@ import Overview from "./Overview";
 import Promotion from "./Promotion";
 
 const Body = () => {
-    return (
-        <div className="body">
-            <BreadCrumb/>
-            <div className="container">
-                <Overview />
-                <Promotion />
-            </div>
-        </div>
-    )
-}
+  return (
+    <div className="body px-10">
+      <BreadCrumb />
+      <div className=" flex flex-row">
+          <Overview />
+          <Promotion />
+      </div>
+    </div>
+  );
+};
 
 export default Body;
