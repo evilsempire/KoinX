@@ -34,7 +34,6 @@ const Chart = () => {
       <CoinDetails />
       <TradingViewWidget />
 
-      <TabGroup />
     </div>
   );
 };
