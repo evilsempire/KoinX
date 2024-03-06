@@ -17,6 +17,9 @@ const Overview = () => {
       <div className="bg-white">
         <Performance />
         <Fundamentals />
+      </div>
+
+      <div className="bg-white mt-4">
         <Sentiment />
         <About />
         <Tokenomics />
