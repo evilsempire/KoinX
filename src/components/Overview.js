@@ -19,11 +19,10 @@ const Overview = () => {
         <Fundamentals />
       </div>
 
-      <div className="bg-white mt-4">
-        <Sentiment />
-        <About />
-        <Tokenomics />
-      </div>
+      <Sentiment />
+
+      <About />
+      <Tokenomics />
     </div>
   );
 };

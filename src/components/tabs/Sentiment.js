@@ -27,7 +27,7 @@ const Sentiment = () => {
   ];
 
   return (
-    <div className="px-7">
+    <div className="px-7 bg-white mt-4">
       <div className="text-3xl font-bold py-4">Sentiment</div>
 
       <div className="text-xl font-semibold text-slate-800 pb-4">
