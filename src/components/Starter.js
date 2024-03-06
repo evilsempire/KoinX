@@ -4,7 +4,7 @@ import signup from "../../assets/sign-up.png";
 
 const Starter = () => {
   return (
-    <div className="bg-blue-700 text-white p-10 text-center rounded-lg">
+    <div className="bg-blue-700 text-white p-10 text-center rounded-lg mb-7">
       <div className="text-3xl font-bold pb-4">
         Get Started with KoinX for FREE
       </div>
