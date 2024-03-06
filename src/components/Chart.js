@@ -7,7 +7,7 @@ const Chart = () => {
   const [coinPrice, setCoinPrice] = useState(null);
 
   useEffect(() => {
-    getCointPrice();
+  getCointPrice();
   }, []);
 
   const API_OPTIONS = {
@@ -25,13 +25,13 @@ const Chart = () => {
     // );
     const response = await fetch("https://mocki.io/v1/fe7bdf8c-e2e4-405f-877d-d36211e0de2c");
     const details = await response.json();
-    console.log(details);
-    return details;
+    
+    setCoinPrice(details?.bitcoin)
   };
 
   return (
     <div>
-      <CoinDetails />
+      <CoinDetails coinPrice={coinPrice}/>
       <TradingViewWidget />
 
     </div>

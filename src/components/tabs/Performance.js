@@ -10,7 +10,7 @@ const Performance = () => {
           <div className="">46,930.22</div>
         </div>
         <div className="basis-2/3 text-center">
-          <div class="basis-1/2 w-[700px] h-[5px] m-[20px] bg-gradient-to-r from-orange-600 via-yellow-500 to-green-500 rounded-sm"></div>
+          <div className="basis-1/2 w-[700px] h-[5px] m-[20px] bg-gradient-to-r from-orange-600 via-yellow-500 to-green-500 rounded-sm"></div>
         </div>
         <div className="basis-1/3 text-right">
           <div>Today's High</div>
@@ -24,7 +24,7 @@ const Performance = () => {
           <div className="">46,930.22</div>
         </div>
         <div className="basis-2/3 text-center">
-          <div class="basis-1/2 w-[700px] h-[5px] m-[20px] bg-gradient-to-r from-orange-600 via-yellow-500 to-green-500 rounded-sm"></div>
+          <div className="basis-1/2 w-[700px] h-[5px] m-[20px] bg-gradient-to-r from-orange-600 via-yellow-500 to-green-500 rounded-sm"></div>
         </div>
         <div className="basis-1/3 text-right">
           <div>52W High</div>

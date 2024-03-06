@@ -52,20 +52,20 @@ const Sentiment = () => {
           </div>
 
           <div className="ml-10 text-slate-500">
-              <div class="flex flex-row m-2">
-                <div class=" mr-6">Buy</div>
-                <div class="basis-1/2 w-[700px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
-                <div class="basis-1/4 ">76%</div>
+              <div className="flex flex-row m-2">
+                <div className=" mr-6">Buy</div>
+                <div className="basis-1/2 w-[700px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
+                <div className="basis-1/4 ">76%</div>
               </div>
-              <div class="flex flex-row m-2">
-                <div class=" mr-4">Hold</div>
-                <div class="w-[30px] h-2 m-[10px] bg-slate-300 rounded-sm"></div>
-                <div class="basis-1/4 ">8%</div>
+              <div className="flex flex-row m-2">
+                <div className=" mr-4">Hold</div>
+                <div className="w-[30px] h-2 m-[10px] bg-slate-300 rounded-sm"></div>
+                <div className="basis-1/4 ">8%</div>
               </div>
-              <div class="flex flex-row m-2">
-                <div class=" mr-6">Sell</div>
-                <div class="w-[60px] h-2 m-[10px] bg-red-500 rounded-sm"></div>
-                <div class="basis-1/4 ">16%</div>
+              <div className="flex flex-row m-2">
+                <div className=" mr-6">Sell</div>
+                <div className="w-[60px] h-2 m-[10px] bg-red-500 rounded-sm"></div>
+                <div className="basis-1/4 ">16%</div>
               </div>
           </div>
         </div>
