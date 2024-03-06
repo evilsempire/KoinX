@@ -1,10 +1,12 @@
 import React from "react";
+import { RiInformationFill } from "react-icons/ri";
+
 import CoinInfo from "../common/CoinInfo";
 
 const Fundamentals = () => {
     return (
         <div className="pb-5 px-7">
-            <div className="text-3xl font-bold py-5">Fundamentals</div>
+            <div className="text-3xl font-bold py-5 flex items-center">Fundamentals <RiInformationFill className="text-xl mt-2 ml-2 text-slate-400"/></div>
 
             <div className="flex">
                 <div className="basis-1/2">

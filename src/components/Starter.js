@@ -1,4 +1,5 @@
 import React from "react";
+import { MdOutlineArrowForward } from "react-icons/md";
 
 import signup from "../../assets/sign-up.png";
 
@@ -15,8 +16,8 @@ const Starter = () => {
       <div className="py-5 text-center block m-auto w-[60%]">
         <img src={signup} width={200} />
       </div>
-      <button className="bg-white rounded-md text-black p-4 font-semibold text-xl pb-4">
-        Get Started for FREE {"->"}
+      <button className="items-center m-auto bg-white rounded-md text-black p-4 font-semibold text-md pb-4 flex align-middle">
+        Get Started for FREE <MdOutlineArrowForward className="text-2xl"/>
       </button>
     </div>
   );

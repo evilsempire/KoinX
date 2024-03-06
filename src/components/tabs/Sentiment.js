@@ -1,4 +1,6 @@
 import React from "react";
+import { RiInformationFill } from "react-icons/ri";
+
 import document from "../../../assets/document.png";
 import arrow from "../../../assets/arrow.png";
 import MeasureInfo from "../common/MeasureInfo";
@@ -30,8 +32,8 @@ const Sentiment = () => {
     <div className="px-7 bg-white mt-4 pb-7">
       <div className="text-3xl font-bold py-4">Sentiment</div>
 
-      <div className="text-xl font-semibold text-slate-800 pb-4">
-        Key Events
+      <div className="text-xl font-semibold text-slate-800 pb-4 flex items-center">
+        Key Events <RiInformationFill className="text-xl mt-2 ml-2 text-slate-400"/>
       </div>
 
       <div className="flex text-sm ">
@@ -41,8 +43,8 @@ const Sentiment = () => {
       </div>
 
       <div>
-        <div className="text-xl font-semibold text-slate-800 py-7">
-          Analyst Estimates
+        <div className="text-xl font-semibold text-slate-800 py-7 flex items-center">
+          Analyst Estimates <RiInformationFill className="text-xl mt-2 ml-2 text-slate-400"/>
         </div>
 
         <div className="flex">
@@ -54,7 +56,7 @@ const Sentiment = () => {
           <div className="ml-10 text-slate-500">
               <div className="flex flex-row m-2">
                 <div className=" mr-6">Buy</div>
-                <div className="basis-1/2 w-[700px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
+                <div className="basis-1/2 w-[500px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
                 <div className="basis-1/4 ">76%</div>
               </div>
               <div className="flex flex-row m-2">

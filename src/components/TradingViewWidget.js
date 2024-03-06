@@ -12,7 +12,7 @@ function TradingViewWidget() {
       script.async = true;
       script.innerHTML = `
         {
-          "width": "890",
+          "width": "900",
           "height": "500",
           "symbol": "BITSTAMP:BTCUSD",
           "interval": "D",
@@ -33,7 +33,7 @@ function TradingViewWidget() {
   );
 
   return (
-    <div className="tradingview-widget-container" ref={container}>
+    <div className="tradingview-widget-container " ref={container}>
       <div className="tradingview-widget-container__widget"></div>
     </div>
   );

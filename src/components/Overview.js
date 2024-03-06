@@ -10,7 +10,7 @@ import Team from "./tabs/Team";
 
 const Overview = () => {
   return (
-    <div className="overview basis-4/7">
+    <div className="overview w-[71%] mr-5">
       <Chart />
 
       <TabGroup />

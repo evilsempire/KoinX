@@ -1,10 +1,12 @@
 import React from "react";
+import { MdOutlineArrowDropUp  } from "react-icons/md";
+
 import { convertToLocalString } from "../utils/helper";
 
 const CoinDetails = (props) => {
   console.log(props);
   return (
-    <div className="bg-white p-5 mr-5">
+    <div className="bg-white p-5">
       <div className="flex ">
         <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1696501400" 
             className="mx-1"
@@ -22,7 +24,7 @@ const CoinDetails = (props) => {
       <div className="price mt-10">
         <div className="flex ">
           <div className="font-bold text-3xl mr-[25px]">{`$${convertToLocalString(props?.coinPrice?.usd)}`}</div>
-          <div className="bg-green-200 px-3 percentage text-green-500 font-bold justify-center">{props?.coinPrice?.inr_24h_change?.toFixed(2)}%</div>
+          <div className="bg-green-100 pr-4 percentage text-green-400 font-bold justify-center flex"><MdOutlineArrowDropUp  className="text-2xl"/> {props?.coinPrice?.inr_24h_change?.toFixed(2)}%</div>
           <div className="font-semibold ml-4 percentage text-slate-500">(24H)</div>
         </div>
 
