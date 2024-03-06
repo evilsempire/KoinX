@@ -2,7 +2,7 @@ import React from "react";
 
 const Performance = () => {
   return (
-    <div className="p-5">
+    <div className="px-7">
         <div className="text-3xl font-bold py-5">Performance</div>
       <div className="flex py-5">
         <div className="basis-1/3">
