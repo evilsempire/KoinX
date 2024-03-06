@@ -8,6 +8,7 @@ const Carousel = ({ coins }) => {
   let [current, setCurrent] = useState(0);
 
   let previousSlide = () => {
+    console.log(current);
     if (current === 0) setCurrent(coins.length - 1);
     else setCurrent(current - 1);
   };

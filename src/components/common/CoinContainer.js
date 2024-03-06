@@ -13,7 +13,7 @@ const CoinContainer = (props) => {
         <div className="py-2">{symbol}</div>
         <div 
           dangerouslySetInnerHTML={{__html:  `${data?.price_change_percentage_24h?.usd?.toFixed(2)}%`}}
-        className="mx-2 bg-green-100 px-2 percentage text-green-400 font-semibold text-sm justify-center">
+        className={"mx-2  px-1 percentage  font-semibold text-xs justify-center " + (data?.price_change_percentage_24h?.usd?.toFixed(2) > 0 ? "text-green-400 bg-green-100" : "text-red-400 bg-red-100")}>
          
         </div>
       </div>
