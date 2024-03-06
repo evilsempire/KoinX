@@ -1,8 +1,8 @@
 import React from "react";
 
 const CoinContainer = (props) => {
-  console.log(props)
-  const {thumb, symbol, data} = props?.coin.item
+  const {thumb, symbol, data} = props?.coin?.item;
+
   return (
     <div className="border border-slate-300 rounded-lg m-2 pr-24 pb-4">
       <div className="flex p-2 ">
@@ -12,14 +12,14 @@ const CoinContainer = (props) => {
         />
         <div className="py-2">{symbol}</div>
         <div 
-          dangerouslySetInnerHTML={{__html:  `${data?.price_change_percentage_24h?.usd?.toFixed(2)}%`}}
+          
         className={"mx-2  px-1 percentage  font-semibold text-xs justify-center " + (data?.price_change_percentage_24h?.usd?.toFixed(2) > 0 ? "text-green-400 bg-green-100" : "text-red-400 bg-red-100")}>
-         
+          {`${data?.price_change_percentage_24h?.usd?.toFixed(2)}%`}
         </div>
       </div>
 
-      <div className="px-4 font-semibold text-xl">
-        {data?.price}
+      <div dangerouslySetInnerHTML={{__html:  `${data?.price}`}} className="px-4 font-semibold text-xl ">
+        {/* {data?.price} */}
       </div>
       <img
           className="p-2 ml-6 "
