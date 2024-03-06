@@ -6,10 +6,11 @@ import Fundamentals from "./tabs/Fundamentals";
 import Sentiment from "./tabs/Sentiment";
 import About from "./About";
 import Tokenomics from "./tabs/Tokenomics";
+import Team from "./tabs/Team";
 
 const Overview = () => {
   return (
-    <div className="overview basis-5/7">
+    <div className="overview basis-4/7">
       <Chart />
 
       <TabGroup />
@@ -23,6 +24,8 @@ const Overview = () => {
 
       <About />
       <Tokenomics />
+      
+      <Team />
     </div>
   );
 };

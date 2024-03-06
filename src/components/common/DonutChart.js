@@ -1,6 +1,6 @@
 import React from "react";
 import Chart from "chart.js/auto";
-import { Doughnut, Pie } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 const labels = ["CrowdSale investors", "Foundation",];
 const data = {
   labels: labels,
