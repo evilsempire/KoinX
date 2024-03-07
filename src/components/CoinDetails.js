@@ -1,5 +1,5 @@
 import React from "react";
-import { MdOutlineArrowDropUp  } from "react-icons/md";
+import { MdOutlineArrowDropDown, MdOutlineArrowDropUp  } from "react-icons/md";
 
 import { convertToLocalString } from "../utils/helper";
 
@@ -24,7 +24,9 @@ const CoinDetails = (props) => {
       <div className="price mt-10">
         <div className="flex ">
           <div className="font-bold text-3xl mr-[25px]">{`$${convertToLocalString(props?.coinPrice?.usd)}`}</div>
-          <div className="bg-green-100 pr-4 percentage text-green-400 font-bold justify-center flex"><MdOutlineArrowDropUp  className="text-2xl"/> {props?.coinPrice?.inr_24h_change?.toFixed(2)}%</div>
+          <div className={"pr-3 percentage  font-bold justify-center flex "  +  (props?.coinPrice?.inr_24h_change?.toFixed(2) > 0 ? "text-green-400 bg-green-100" : "text-red-400 bg-red-100")}>
+              {props?.coinPrice?.inr_24h_change?.toFixed(2) > 0 ? <MdOutlineArrowDropUp  className="text-2xl"/>: <MdOutlineArrowDropDown  className="text-2xl"/>}
+             {props?.coinPrice?.inr_24h_change?.toFixed(2)}%</div>
           <div className="font-semibold ml-4 percentage text-slate-500">(24H)</div>
         </div>
 
