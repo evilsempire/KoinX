@@ -36,10 +36,12 @@ const Sentiment = () => {
         Key Events <RiInformationFill className="text-xl mt-2 ml-2 text-slate-400"/>
       </div>
 
-      <div className="flex text-sm ">
+      <div className="flex text-sm md:snap-x">
+        <div className="flex flex-row">
         {measureInfoCollection.map((info, index) => (
           <MeasureInfo key={index} info={info} />
         ))}
+        </div>
       </div>
 
       <div>
@@ -48,26 +50,26 @@ const Sentiment = () => {
         </div>
 
         <div className="flex">
-          <div className="w-28 h-28 bg-green-100 flex items-center justify-center rounded-full text-green-400 font-semibold">
+          <div className="w-20 h-20 bg-green-100 flex items-center justify-center rounded-full text-green-400 font-semibold">
             <div className="text-3xl">76</div>
             <p className="ml-1">%</p>
           </div>
 
-          <div className="ml-10 text-slate-500">
-              <div className="flex flex-row m-2">
+          <div className="ml-4 text-xs text-slate-500">
+              <div className="flex flex-row lg:m-2">
                 <div className=" mr-6">Buy</div>
-                <div className="basis-1/2 w-[500px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
-                <div className="basis-1/4 ">76%</div>
+                <div className="basis-1/2 w-[150px] lg:w-[600px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
+                <div className="basis-1/4 mt-1 lg:mt-0">76%</div>
               </div>
-              <div className="flex flex-row m-2">
+              <div className="flex flex-row lg:m-2">
                 <div className=" mr-4">Hold</div>
                 <div className="w-[30px] h-2 m-[10px] bg-slate-300 rounded-sm"></div>
-                <div className="basis-1/4 ">8%</div>
+                <div className="basis-1/4 mt-1 lg:mt-0">8%</div>
               </div>
-              <div className="flex flex-row m-2">
+              <div className="flex flex-row lg:m-2">
                 <div className=" mr-6">Sell</div>
                 <div className="w-[60px] h-2 m-[10px] bg-red-500 rounded-sm"></div>
-                <div className="basis-1/4 ">16%</div>
+                <div className="basis-1/4 mt-1 lg:mt-0">16%</div>
               </div>
           </div>
         </div>

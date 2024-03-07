@@ -9,7 +9,7 @@ const Header = () => {
         <img className="logo" src={logo} width={100} />
       </div>
       <div className="nav-items">
-        <ul className="flex align-middle">
+        <ul className="lg:flex hidden align-middle md:hidden sm:hidden">
           <li className=" mx-3 font-semibold cursor-pointer">Crypto Taxes</li>
           <li className=" mx-3 font-semibold  cursor-pointer">Free Tools</li>
           <li className=" mx-3 font-semibold  cursor-pointer">Resource Center</li>

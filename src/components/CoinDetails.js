@@ -6,7 +6,7 @@ import { convertToLocalString } from "../utils/helper";
 const CoinDetails = (props) => {
   console.log(props);
   return (
-    <div className="bg-white p-5">
+    <div className="bg-transparent lg:bg-white lg:p-5">
       <div className="flex ">
         <img src="https://assets.coingecko.com/coins/images/1/small/bitcoin.png?1696501400" 
             className="mx-1"
@@ -21,7 +21,7 @@ const CoinDetails = (props) => {
         </div>
       </div>
 
-      <div className="price mt-10">
+      <div className="bg-white price p-5 lg:p-0 mt-7 lg:mt-10">
         <div className="flex ">
           <div className="font-bold text-3xl mr-[25px]">{`$${convertToLocalString(props?.coinPrice?.usd)}`}</div>
           <div className={"pr-3 percentage  font-bold justify-center flex "  +  (props?.coinPrice?.inr_24h_change?.toFixed(2) > 0 ? "text-green-400 bg-green-100" : "text-red-400 bg-red-100")}>
@@ -30,7 +30,7 @@ const CoinDetails = (props) => {
           <div className="font-semibold ml-4 percentage text-slate-500">(24H)</div>
         </div>
 
-        <div className="price-inr font-semibold text-xl mt-3 "> ₹ {convertToLocalString(props?.coinPrice?.inr)}</div>
+        <div className="price-inr font-semibold text-xl lg:mt-3 "> ₹ {convertToLocalString(props?.coinPrice?.inr)}</div>
       </div>
     </div>
   );
