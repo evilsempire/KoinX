@@ -3,7 +3,7 @@ import jhonSmith from "../../../assets/jhon-smith.jpg";
 const TeamMember = (props) => {
 
     const {image,member_name, description} = props?.member;
-    const document = require(`../../../assets/${image}`)
+    const document = import(`../../../assets/${image}`)
   return (
     <div className="flex p-2 bg-blue-100 mb-5">
       <div className="w-[50%] text-center p-2">
