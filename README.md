@@ -1,20 +1,19 @@
-Header
-    - Logo
-    - Nav Items
-Body
-    - BreadCrumb
-    - Card Container
-        - Overview 
-            - Chart
-            - Tabs
-                - Details
-                - Sentiment
-                - About 
-                - Tokenomics
-                - Team
-        - Promotion
-            - Starter
-            - Trending
-Container
-    - Featured
-    - Trending
+
+# KoinX
+
+Its an UI for Crypto Web App
+
+
+## Demo
+
+https://luxury-cheesecake-0b891b.netlify.app/
+
+## Installation
+
+first git clone the repo
+
+```bash
+  npm install
+  run it on localhost
+```
+    
