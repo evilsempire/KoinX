@@ -50,7 +50,7 @@ const About = () => {
 
       <div className="font-bold text-2xl">Already Holding Bitcoin?</div>
 
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         <CheckNow
           gradientColor="from-teal-400 to-blue-600"
           image={mobileTrading}

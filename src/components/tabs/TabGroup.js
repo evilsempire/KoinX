@@ -35,7 +35,7 @@ function TabGroup() {
   const [active, setActive] = useState(types[0]);
   return (
     <>
-      <div className="flex border-b-stone-900">
+      <div className="flex border-b-stone-900 overflow-x-auto">
         {types.map((type) => (
           <Tab
             key={type}
