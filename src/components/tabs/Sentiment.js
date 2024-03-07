@@ -50,12 +50,12 @@ const Sentiment = () => {
         </div>
 
         <div className="flex">
-          <div className="w-20 h-20 bg-green-100 flex items-center justify-center rounded-full text-green-400 font-semibold">
+          <div className="w-20 h-20 lg:w-28 lg:h-28 bg-green-100 flex items-center justify-center rounded-full text-green-400 font-semibold">
             <div className="text-3xl">76</div>
             <p className="ml-1">%</p>
           </div>
 
-          <div className="ml-4 text-xs text-slate-500">
+          <div className="ml-4 text-xs lg:text-base text-slate-500">
               <div className="flex flex-row lg:m-2">
                 <div className=" mr-6">Buy</div>
                 <div className="basis-1/2 w-[150px] lg:w-[600px] h-2 m-[10px] bg-green-600 rounded-sm"></div>
