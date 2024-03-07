@@ -27,7 +27,7 @@ const OtherCoins = () => {
 
       <div className="pb-5">
         {trendingCoins?.length && (
-          <Carousel    sel coins={trendingCoins?.slice(0, 8)} />
+          <Carousel coins={trendingCoins?.slice(0, 8)} />
         )}
       </div>
     </div>
