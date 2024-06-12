@@ -6,7 +6,7 @@ Its an UI for Crypto Web App
 
 ## Demo
 
-https://luxury-cheesecake-0b891b.netlify.app/
+https://koinx-frontend-webapp.netlify.app/
 
 ## Installation
 
